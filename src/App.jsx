@@ -29,7 +29,7 @@ function App() {
   let filteredList = [...list];
   if (filterStatus === "completed") {
     filteredList = filteredList.filter((list) => list.status);
-  } else if (filterStatus === "incopleted") {
+  } else if (filterStatus === "active") {
     filteredList = filteredList.filter((list) => !list.status);
   }
 
