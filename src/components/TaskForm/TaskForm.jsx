@@ -5,6 +5,8 @@ const GroceryForm = ({
   handleSubmit,
   name,
   setName,
+  date,
+  setDate,
   isEditing,
   type,
   msg,
@@ -17,17 +19,22 @@ const GroceryForm = ({
       {show && (
         <Alert type={type} msg={msg} list={list} showAlert={showAlert} />
       )}
-      <div>
-        <h1>Grocery List</h1>
+      <div className="form-row">
         <input
           type="text"
-          className="grocery"
-          placeholder="e.g. lemons"
+          className="input-field"
+          placeholder="e.g. buy groceries"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
+        <input
+          type="datetime-local"
+          className="input-field date"
+          value={date}
+          onChange={(e) => setDate(e.target.value)}
+        />
         <button type="submit" className="btn-submit">
-          {isEditing ? "edit" : "submit"}
+          {isEditing ? "edit" : "+ add new"}
         </button>
       </div>
     </form>
