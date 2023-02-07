@@ -1,3 +1,8 @@
+# This is the best Task Manager App 
+
+The app have tasks listed by Name, Date and Status. Every task can be edited or delited. The list can be sorted by Name and Date and can be filtered by Status (Active, Completed or All)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
